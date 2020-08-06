@@ -14,7 +14,7 @@ You will be able to:
 
 Regression analysis is one of the most important statistical techniques for business applications. It’s a statistical methodology that helps estimate the strength and direction of the relationship between two (or more) variables. Regression results show whether the relationship is valid or not. It also helps to _predict_ an unknown value based on the derived relationship.
 
-> Regression Analysis is a __parametric__ technique meaning a set of parameters are used to **predict** the value of an unknown target variable (or dependent variable) $y$ based on one or more of known input features (or independent variables, predictors), often denoted by $x$. 
+> Regression Analysis is a __parametric__ technique meaning a set of parameters are used to **predict** the value of an unknown target variable (or dependent variable)  <img src="https://render.githubusercontent.com/render/math?math=y"> based on one or more of known input features (or independent variables, predictors), often denoted by  <img src="https://render.githubusercontent.com/render/math?math=x"> . 
 
 
 Let's consider another example. Someone's height and foot size are generally considered to be related. Generally speaking, taller people tend to have bigger feet (and, obviously, shoe size).
@@ -45,19 +45,19 @@ This line can then be used to describe the data and conduct further experiments 
 
 A straight line can be written as :
 
-$$y=mx+c$$
+ <img src="https://render.githubusercontent.com/render/math?math=y=mx%2bc"> 
 or, alternatively
 
-$$y =  \beta_0+ \beta_1 x $$
+ <img src="https://render.githubusercontent.com/render/math?math=y =  \beta_0%2b \beta_1 x "> 
 
 You may come across other ways of expressing this straight line equation for simple linear regression. Yet there are **four key components** you'll want to keep in mind: 
 
 <img src="images/linreg.png" width="650"> 
 
-* A **dependent variable** that needs to estimated and predicted (here: $y$) 
-* An **independent variable**, the input variable (here: $x$)
-* The **slope** which determines the angle of the line. Here, the slope is denoted as $m$, or $\beta_1$.
-* The **intercept** which is the constant determining the value of $y$ when $x$ is 0. We denoted the intercept here as $c$ or $\beta_0$.
+* A **dependent variable** that needs to estimated and predicted (here:  <img src="https://render.githubusercontent.com/render/math?math=y"> ) 
+* An **independent variable**, the input variable (here:  <img src="https://render.githubusercontent.com/render/math?math=x"> )
+* The **slope** which determines the angle of the line. Here, the slope is denoted as  <img src="https://render.githubusercontent.com/render/math?math=m"> , or  <img src="https://render.githubusercontent.com/render/math?math=\beta_1"> .
+* The **intercept** which is the constant determining the value of  <img src="https://render.githubusercontent.com/render/math?math=y"> when  <img src="https://render.githubusercontent.com/render/math?math=x"> is 0. We denoted the intercept here as  <img src="https://render.githubusercontent.com/render/math?math=c"> or  <img src="https://render.githubusercontent.com/render/math?math=\beta_0"> .
 
 >_Slope_ and _Intercept_ are the **coefficients** or the **parameters** of a linear regression model. Calculating the regression model simply involves the calculation of these two values. 
 
@@ -74,12 +74,12 @@ Consider the line below to see how we calculate slope and intercept.
 In our example:
 
 
-$c$ is equal to 15, which is where our line intersects with the y-axis.
+ <img src="https://render.githubusercontent.com/render/math?math=c"> is equal to 15, which is where our line intersects with the y-axis.
 
-$m$ is equal to 3, which is our slope. 
+ <img src="https://render.githubusercontent.com/render/math?math=m"> is equal to 3, which is our slope. 
 
 You can find a slope by taking an arbitrary part of the line, looking at the
-differences for the x-value and the y-value for that part of the line, and dividing $\Delta y$ by $\Delta x$. In other words, you can look at the **change in y over the change in x** to find the slope!
+differences for the x-value and the y-value for that part of the line, and dividing  <img src="https://render.githubusercontent.com/render/math?math=\Delta y"> by  <img src="https://render.githubusercontent.com/render/math?math=\Delta x"> . In other words, you can look at the **change in y over the change in x** to find the slope!
 
 ### Important note on notation
 
@@ -90,12 +90,12 @@ Looking at the above plots, you know that you have the green dots that are our o
 Now, when we draw our regression line based on these few green dots, we use the following notations:
 
 
-$$\hat{y}=\hat m x+ \hat{c}$$ or 
-$$\hat y =  \hat \beta_0+ \hat \beta_1 x $$
+ <img src="https://render.githubusercontent.com/render/math?math=\hat{y}=\hat m x%2b \hat{c}"> or 
+ <img src="https://render.githubusercontent.com/render/math?math=\hat y =  \hat \beta_0%2b \hat \beta_1 x "> 
 
 As you can see, you're using a "hat" notation which stands for the fact that we are working with **estimations**.
-- When trying to draw a "best fit line", you're **estimating** the most appropriate value possible for your intercept and your slope, hence $\hat{c}$ /$ \hat \beta_0 $ and  $\hat{m}$ /$ \hat \beta_1 $.
-- Next, when we use our line to predict new values $y$ given $x$, your estimate is an **approximation** based on our estimated parameter values. Hence we use $\hat y $ instead of $y$. $\hat y$ lies _ON_ your regression line, $y$ is the associated y-value for each of the green dots in the plot above. The **error** or the **vertical offset** between the line and the actual observation values is denoted by the red vertical lines in the plot above. Mathematically, the vertical offset can be written as $\mid \hat y - y\mid$.
+- When trying to draw a "best fit line", you're **estimating** the most appropriate value possible for your intercept and your slope, hence  <img src="https://render.githubusercontent.com/render/math?math=\hat{c}"> / <img src="https://render.githubusercontent.com/render/math?math=\hat \beta_0 "> and   <img src="https://render.githubusercontent.com/render/math?math=\hat{m}"> / <img src="https://render.githubusercontent.com/render/math?math=\hat \beta_1 "> .
+- Next, when we use our line to predict new values  <img src="https://render.githubusercontent.com/render/math?math=y"> given  <img src="https://render.githubusercontent.com/render/math?math=x"> , your estimate is an **approximation** based on our estimated parameter values. Hence we use  <img src="https://render.githubusercontent.com/render/math?math=\hat y "> instead of  <img src="https://render.githubusercontent.com/render/math?math=y"> .  <img src="https://render.githubusercontent.com/render/math?math=\hat y"> lies _ON_ your regression line,  <img src="https://render.githubusercontent.com/render/math?math=y"> is the associated y-value for each of the green dots in the plot above. The **error** or the **vertical offset** between the line and the actual observation values is denoted by the red vertical lines in the plot above. Mathematically, the vertical offset can be written as  <img src="https://render.githubusercontent.com/render/math?math=\mid \hat y - y\mid"> .
 
 So how do you find the line with the best fit? You may think that you have to try lots and lots of different lines to see which one fits best. Fortunately, this task is not as complicated as in may seem. Given some data points, the best-fit line always has a distinct slope and y-intercept that can be calculated using simple linear algebraic approaches. Let's quickly visit the required formulas.
 
@@ -103,23 +103,23 @@ So how do you find the line with the best fit? You may think that you have to tr
 
 Before we calculate the best-fit line, we have to make sure that we have calculated the following measures for variables X and Y:
 
-* The mean of the X $(\bar{X})$
+* The mean of the X  <img src="https://render.githubusercontent.com/render/math?math=(\bar{X})"> 
 
-* The mean of the Y $(\bar{Y})$
+* The mean of the Y  <img src="https://render.githubusercontent.com/render/math?math=(\bar{Y})"> 
 
-* The standard deviation of the X values $(S_X)$
+* The standard deviation of the X values  <img src="https://render.githubusercontent.com/render/math?math=(S_X)"> 
 
-* The standard deviation of the y values $(S_Y)$
+* The standard deviation of the y values  <img src="https://render.githubusercontent.com/render/math?math=(S_Y)"> 
 
-* The correlation between X and Y ( often denoted by the Greek letter "Rho" or $\rho$ - Pearson Correlation)
+* The correlation between X and Y ( often denoted by the Greek letter "Rho" or  <img src="https://render.githubusercontent.com/render/math?math=\rho"> - Pearson Correlation)
 
 
 
 ## Calculating Slope  
 
-With the above ingredients in hand, we can calculate the slope (shown as $b$ below) of the best-fit line, using the formula:
+With the above ingredients in hand, we can calculate the slope (shown as  <img src="https://render.githubusercontent.com/render/math?math=b"> below) of the best-fit line, using the formula:
 
-$$\hat m = \rho \frac{S_Y}{S_X}$$
+ <img src="https://render.githubusercontent.com/render/math?math=\hat m = \rho \frac{S_Y}{S_X}"> 
 
 This formula is also known as the **least-squares method**.
 
@@ -130,21 +130,21 @@ The slope of the best-fit line can be a negative number following a negative cor
 
 ## Calculating Intercept
 
-So now that we have the slope value (\hat m), we can put it back into our formula $(\hat y = \hat m x+ \hat c)$ to calculate intercept. The idea is that
+So now that we have the slope value (\hat m), we can put it back into our formula  <img src="https://render.githubusercontent.com/render/math?math=(\hat y = \hat m x%2b \hat c)"> to calculate intercept. The idea is that
 
-$$\bar{Y} = \hat c + \hat m \bar{X}$$
-$$ \hat c = \bar{Y} - \hat m\bar{X}$$
+ <img src="https://render.githubusercontent.com/render/math?math=\bar{Y} = \hat c %2b \hat m \bar{X}"> 
+ <img src="https://render.githubusercontent.com/render/math?math=\hat c = \bar{Y} - \hat m\bar{X}"> 
 
 
-Recall that $\bar{X}$ and $\bar{Y}$ are the mean values for variables X and Y.  So, in order to calculate the $\hat y$-intercept of the best-fit line, we start by finding the slope of the best-fit line using the above formula. Then to find the $\hat y$-intercept, we multiply the slope value by the mean of x and subtract the result from the mean of y. 
+Recall that  <img src="https://render.githubusercontent.com/render/math?math=\bar{X}"> and  <img src="https://render.githubusercontent.com/render/math?math=\bar{Y}"> are the mean values for variables X and Y.  So, in order to calculate the  <img src="https://render.githubusercontent.com/render/math?math=\hat y"> -intercept of the best-fit line, we start by finding the slope of the best-fit line using the above formula. Then to find the  <img src="https://render.githubusercontent.com/render/math?math=\hat y"> -intercept, we multiply the slope value by the mean of x and subtract the result from the mean of y. 
 
 ## Predicting from the model
 
-As mentioned before, when you have a regression line with defined parameters for slope and intercept as calculated above, you can easily predict the $\hat{y}$ (target) value for a new $x$ (feature) value using the estimated parameter values:
+As mentioned before, when you have a regression line with defined parameters for slope and intercept as calculated above, you can easily predict the  <img src="https://render.githubusercontent.com/render/math?math=\hat{y}"> (target) value for a new  <img src="https://render.githubusercontent.com/render/math?math=x"> (feature) value using the estimated parameter values:
 
-$$\hat{y} = \hat mx + \hat c$$
+ <img src="https://render.githubusercontent.com/render/math?math=\hat{y} = \hat mx %2b \hat c"> 
 
-Remember that the difference between y and $\hat{y}$ is that $\hat{y}$ is the value predicted by the fitted model, whereas $y$ carries actual values of the variable (called the truth values) that were used to calculate the best fit. 
+Remember that the difference between y and  <img src="https://render.githubusercontent.com/render/math?math=\hat{y}"> is that  <img src="https://render.githubusercontent.com/render/math?math=\hat{y}"> is the value predicted by the fitted model, whereas  <img src="https://render.githubusercontent.com/render/math?math=y"> carries actual values of the variable (called the truth values) that were used to calculate the best fit. 
 
 Next, let's move on and try to code these equations to fit a regression line to a simple dataset to see all of this in action. 
 
