@@ -2,9 +2,11 @@
 # Simple Linear Regression 
 
 ## Introduction
+
 Regression analysis is often the first real learning application that aspiring data scientists will come across. It is one of the simplest techniques to master, but it still requires some mathematical and statistical understanding of the underlying process. This lesson will introduce you to the regression process based on the statistical ideas we have discovered so far. 
 
 ## Objectives
+
 You will be able to:
 
 * Perform a linear regression using self-constructed functions
@@ -45,10 +47,11 @@ This line can then be used to describe the data and conduct further experiments 
 
 A straight line can be written as :
 
- <img src="https://render.githubusercontent.com/render/math?math=y=mx%2bc"> 
+<img src="https://render.githubusercontent.com/render/math?math=y=mx%2bc"> 
+
 or, alternatively
 
- <img src="https://render.githubusercontent.com/render/math?math=y =  \beta_0%2b \beta_1 x "> 
+<img src="https://render.githubusercontent.com/render/math?math=y =  \beta_0%2b \beta_1 x "> 
 
 You may come across other ways of expressing this straight line equation for simple linear regression. Yet there are **four key components** you'll want to keep in mind: 
 
@@ -67,16 +70,14 @@ You may come across other ways of expressing this straight line equation for sim
 
 Consider the line below to see how we calculate slope and intercept.
 
-
 <img src="images/linregall.png" width="650">
 
 
 In our example:
 
+<img src="https://render.githubusercontent.com/render/math?math=c"> is equal to 15, which is where our line intersects with the y-axis.
 
- <img src="https://render.githubusercontent.com/render/math?math=c"> is equal to 15, which is where our line intersects with the y-axis.
-
- <img src="https://render.githubusercontent.com/render/math?math=m"> is equal to 3, which is our slope. 
+<img src="https://render.githubusercontent.com/render/math?math=m"> is equal to 3, which is our slope. 
 
 You can find a slope by taking an arbitrary part of the line, looking at the
 differences for the x-value and the y-value for that part of the line, and dividing  <img src="https://render.githubusercontent.com/render/math?math=\Delta y"> by  <img src="https://render.githubusercontent.com/render/math?math=\Delta x"> . In other words, you can look at the **change in y over the change in x** to find the slope!
@@ -88,7 +89,6 @@ Now that you know how the slope and intercept define the line, it's time for som
 Looking at the above plots, you know that you have the green dots that are our observations associated with x- and y-values. 
 
 Now, when we draw our regression line based on these few green dots, we use the following notations:
-
 
  <img src="https://render.githubusercontent.com/render/math?math=\hat{y}=\hat m x%2b \hat{c}"> or 
  <img src="https://render.githubusercontent.com/render/math?math=\hat y =  \hat \beta_0%2b \hat \beta_1 x "> 
@@ -113,8 +113,6 @@ Before we calculate the best-fit line, we have to make sure that we have calcula
 
 * The correlation between X and Y ( often denoted by the Greek letter "Rho" or  <img src="https://render.githubusercontent.com/render/math?math=\rho"> - Pearson Correlation)
 
-
-
 ## Calculating Slope  
 
 With the above ingredients in hand, we can calculate the slope (shown as  <img src="https://render.githubusercontent.com/render/math?math=b"> below) of the best-fit line, using the formula:
@@ -130,9 +128,10 @@ The slope of the best-fit line can be a negative number following a negative cor
 
 ## Calculating Intercept
 
-So now that we have the slope value (\hat m), we can put it back into our formula  <img src="https://render.githubusercontent.com/render/math?math=(\hat y = \hat m x%2b \hat c)"> to calculate intercept. The idea is that
+So now that we have the slope value (<img src="https://render.githubusercontent.com/render/math?math=\hat m">), we can put it back into our formula  <img src="https://render.githubusercontent.com/render/math?math=(\hat y = \hat m x%2b \hat c)"> to calculate intercept. The idea is that
 
  <img src="https://render.githubusercontent.com/render/math?math=\bar{Y} = \hat c %2b \hat m \bar{X}"> 
+ <br>
  <img src="https://render.githubusercontent.com/render/math?math=\hat c = \bar{Y} - \hat m\bar{X}"> 
 
 
